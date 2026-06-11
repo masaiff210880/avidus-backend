@@ -17,6 +17,6 @@ taskRouter.get("/all-task", protect, getAllTasks);
 taskRouter.delete("/delete-task/:id", protect, deleteTask);
 taskRouter.put("/update-task/:id", protect, updateTask);
 taskRouter.get("/task-user/:id", protect, getTaskById);
-taskRouter.get("/user-tasks", protect, getTasks);
+taskRouter.get("/user-tasks/:id", protect, getTasks);
 
 export default taskRouter;
